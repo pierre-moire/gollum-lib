@@ -37,7 +37,7 @@ module Gollum
                   'nowrap', 'prompt', 'readonly', 'rel', 'rev',
                   'rows', 'rowspan', 'rules', 'scope',
                   'selected', 'shape', 'size', 'span',
-                  'start', 'summary', 'tabindex', 'target',
+                  'start', 'style', 'summary', 'tabindex', 'target',
                   'title', 'type', 'usemap', 'valign', 'value',
                   'vspace', 'width']
     }.freeze
@@ -60,8 +60,7 @@ module Gollum
     # Default elements whose contents will be removed in addition
     # to the elements themselve
     REMOVE_CONTENTS = [
-        'script',
-        'style'
+        'script'
     ].freeze
 
     # Default transformers to force @id attributes with 'wiki-' prefix
